@@ -1,0 +1,21 @@
+{
+  "name": "nebo15",
+  "description": "first gulp project",
+  "main": "main.js",
+  "authors": [
+    "stranger"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "owl.carousel": "^2.3.4",
+    "slick-carousel": "^1.8.1"
+  }
+}

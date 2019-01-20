@@ -1,0 +1,598 @@
+$white1: #ffffff
+$white2: #eeeeee
+
+$black: black
+$black2: #2E3033
+
+$red1: #FF3D33
+$red2: #E5372E
+$red3: #ff9999
+
+$gray1: #515255
+$gray2: #626366
+$gray3: #949699
+$gray4: #BCBFC4
+$gray5: #E1E2E6
+$gray6: #F2F3F5
+$gray7: #FAFAFA
+
+$color1: #FF3D33
+$color2: #E5372E
+$color3: #009350
+
+@import ../../bower_components/bootstrap/dist/css/bootstrap-grid.min.css
+@import ../../bower_components/owl.carousel/dist/assets/owl.carousel.min.css
+@import ../../bower_components/slick-carousel/slick/slick.css
+@import ../../bower_components/fancybox/dist/jquery.fancybox.min.css
+@import mixins
+@import reset
+@import plugins
+@import carousel
+@import base
+@import global
+@import form
+@import header
+@import 'partials/mod.sass'
+@import 'partials/templates.sass'
+
+
+// Секция промо, первый экран
+.section-promo
+    position: relative
+    padding-bottom: 4rem
+    color: $white1
+    text-align: center
+    @media (max-width: 768px)
+        background-image: url('/img/bg_blur.png');
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: 50%
+    @media (min-width: 768px)
+        text-align: left
+    &__content
+        min-height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        @media (max-width: 768px)
+            min-height: 65rem
+            padding-top: 3rem
+        @media (max-width: 576px)
+            min-height: calc(100vh - 20rem)
+    &__desc
+        position: relative
+        font-weight: normal
+        line-height: normal
+        font-size: 2.2rem
+        @media (max-width: 768px)
+            max-width: 30rem
+            margin: 0 auto
+        &::before
+            content: ''
+            position: absolute
+            width: 8rem
+            height: 1px
+            background-color: $red1
+            left: -11rem
+            top: 50%
+            @media (max-width: 768px)
+                width: 10rem
+                height: 1px
+                bottom: 0
+                left: 34%
+                top: 7rem
+    &__title
+        font-weight: 900
+        line-height: 5.6rem
+        font-size: 4rem
+        letter-spacing: 0.03em
+        text-transform: uppercase
+    &--dot
+        &::before
+                content: ""
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                background: rgba(0,0,0,.5) url('/img/dot.svg') 0 0 repeat
+   
+// Секция промо, футер
+.section-promo-bottom
+    padding: 6rem 0 6rem 0
+    &__content
+        min-height: 36rem
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        padding: 5rem 0
+        @media (max-width: 768px)
+            padding: 0 0 5rem 0
+    &__desc
+        font-weight: normal
+        line-height: normal
+        font-size: 2.2rem
+        color: $gray2
+        text-align: left
+        margin: 3rem 0
+    &__title
+        font-weight: 900
+        line-height: 5.6rem
+        font-size: 4rem
+        letter-spacing: 0.03em
+        text-transform: uppercase
+        color: $color1
+        text-align: left
+
+// Футер секция
+.section-footer
+    padding: 0 0 6rem 0
+    &__text
+        font-weight: bold
+        line-height: 1.5rem
+        font-size: 1.2rem
+        text-align: center
+        color: $gray3
+        &:not(:first-child)
+            margin-top: 1rem
+
+// Видео
+.video-fixed
+    position: fixed
+    top: 50%
+    left: 50%
+    min-width: 100%
+    width: auto
+    min-height: 100%
+    z-index: -100
+    -webkit-transform: translateX(-50%) translateY(-50%)
+    transform: translateX(-50%) translateY(-50%)
+    background-size: cover
+
+// Кнопки чек и радио
+.c-input-check
+    &__list
+        list-style: none
+        &-item
+    &__inner
+        margin-bottom: 1.5rem
+        font-weight: normal
+        line-height: 2.5rem
+        font-size: 1.6rem
+    & input[type="checkbox"]
+        display: none
+    & input[type="radio"]
+        display: none
+    &__input
+
+    &__label
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        color: $gray2
+        &:hover
+            color: black
+        &.\--radio
+            &::before
+                content: ''
+                position: absolute
+                left: -2rem
+                width: 1.3rem
+                height: 1.3rem
+                border-radius: 50%
+                border: 1px solid $gray4
+            &::after
+                content: ''
+                position: absolute
+                left: -1.6rem
+                width: 0.1rem
+                height: 0.1rem
+                border-radius: 50%
+                background-color: red
+                &:hover::after
+                    transform: scale(2)
+        &.\--checked
+            &::before
+                content: ''
+                position: absolute
+                left: -2rem
+                width: 1.3rem
+                height: 1.3rem
+                border-radius: 2px
+                border: 1px solid $gray4
+            &::after
+                content: ''
+                position: absolute
+                left: -1.6rem
+                width: 0.1rem
+                height: 0.1rem
+                border-radius: 50%
+                background-color: red
+
+// Кнопки навигации
+.tm1-nav
+    &__item
+        &.\--active
+            box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.15)
+            border-radius: 2px
+            background-color: $gray7
+            overflow: hidden
+    &__link
+        font-weight: normal
+        line-height: 2.5rem
+        font-size: 1.6rem
+        color: $gray2
+        border-bottom: 0.25px solid $color2
+        text-decoration: none
+        padding-bottom: 0.5rem
+        margin: 0 2rem
+        &:hover, &:focus, &:active
+            text-decoration: none
+            color: $black2
+        &:hover
+            border-color: $color2
+.tm2-nav
+    &__item
+        padding: 1.5rem 1.8rem
+        &:hover
+            box-shadow: 0 0 0 1px $gray6
+        &.\--active
+            box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.15)
+            background-color: $gray7
+    &__wrap-img
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 11rem
+    &__img
+        max-width: 10rem
+    &__title
+        font-weight: bold
+        line-height: 2.3rem
+        font-size: 1.6rem
+        text-align: center
+        letter-spacing: 0.04em
+        text-transform: uppercase
+        color: $gray2
+        margin-top: 1rem
+
+
+// Буллиты
+.c-main
+    margin-top: -6rem
+    &__item
+        margin-top: 6rem
+        font-size: 1.4rem
+        text-align: center
+        max-width: 35rem
+        margin-right: auto
+        margin-left: auto
+        position: relative
+    &__wrap-img
+        margin-bottom: 1.5rem
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 10rem
+        &.\--xs
+            height: 3rem
+        &.\--sm
+            height: 10rem
+        &.\--md
+            height: 10rem
+        &.\--xl
+            height: 12rem
+    &__img
+        max-height: 10rem
+        &.\--xs
+            max-height: 3rem
+            max-width: 3rem
+        &.\--sm
+            max-width: 8rem
+            max-height: 8rem
+        &.\--md
+            max-width: 8rem
+            max-height: 8rem
+        &.\--xl
+            max-width: 20rem
+            max-height: 20rem
+    &__title
+        font-weight: bold
+        line-height: normal
+        margin-top: 3rem
+        &.\--standart
+            letter-spacing: 0.02em
+            text-transform: uppercase
+        &.\--xs
+            font-size: 1.2rem
+
+            font-weight: normal
+            line-height: 1.5rem
+        &.\--sm
+            font-size: 1.4rem
+            font-weight: normal
+            line-height: 1.8rem
+
+        &.\--md
+            font-size: 1.6rem
+            font-weight: normal
+            letter-spacing: 0.02em
+            line-height: 2.5rem
+
+        &.\--xl
+            font-weight: normal
+            line-height: 3.2rem
+            font-size: 2.3rem
+    &__text
+        font-weight: normal
+        line-height: 1.8rem
+        margin-top: 1rem
+        &.\--xl
+            line-height: 2.5rem
+            font-size: 1.6rem
+
+
+// Промо блоки с информацией
+.c-number
+    &__item
+        max-width: 18rem
+        text-align: left
+        &.\--bg
+            padding: 3.5rem 3rem 4.5rem 3.5rem
+            background-color: $black2
+
+    &__title
+        font-weight: bold
+        line-height: normal
+        font-size: 4rem
+        color: $color1
+        @media (max-width: 768px)
+            font-size: 3rem
+    &__text
+        font-weight: normal
+        line-height: 1.8rem
+        font-size: 1.4rem
+        color: $gray2
+        margin-top: 0.5rem
+        &.\--gray
+            color: $gray4
+    &__small
+        font-size: 2.5rem
+        @media (max-width: 768px)
+            font-size: 2rem
+
+
+
+.tm1-cart
+    &__item
+    &__wrap-img
+        display: flex
+        align-items: center
+        justify-content: center
+        &.\--sm
+            height: 12rem
+        &.\--standart
+            height: 16rem
+    &__img
+        &.\--sm
+            max-width: 12rem
+        &.\--standart
+            max-width: 18rem
+            
+    &__title
+        text-align: center
+        font-weight: normal
+        color: $gray2
+        margin-top: 1rem
+        &.\--sm
+            line-height: 1.5rem
+            font-size: 1.2rem
+        &.\--standart
+            line-height: 2.5rem
+            font-size: 1.6rem
+.tm2-cart
+    &__item
+        background-color: $gray6
+        padding: 2rem 2rem 3rem 2rem
+    &__wrap-img
+        text-align: center
+        
+    &__img
+        max-width: 35rem
+    &__title
+        text-align: center
+        font-weight: bold
+        line-height: 2.6rem
+        font-size: 1.8rem
+        text-align: center
+        letter-spacing: 0.04em
+        text-transform: uppercase
+        margin-top: 3rem
+        color: $gray2
+
+
+.inline
+    display: flex
+    justify-content: center
+    align-items: center
+    &__title
+        font-weight: 900
+        line-height: normal
+        font-size: 1.4rem
+        letter-spacing: 0.05em
+        color: #4F4F4F
+    &__wrap-img
+        margin-right: 1rem
+    &__img
+        max-width: 3.5rem
+
+
+// Характеристики с точками
+.c-tech
+    min-width: 100%
+    &__item
+        display: flex
+        justify-content: space-between
+        margin-top: 2rem
+    &__param
+    &__value
+    &__line
+        flex: 1
+        border-bottom: 2px dotted $gray4
+        margin: 0 1rem
+        margin-bottom: 0.5rem
+
+
+// Блок отзывов
+.c-review
+    &__item
+        display: flex
+        padding: 1rem
+        @media (max-width: 768px)
+            flex-direction: column
+    &__inner
+        &.\--main
+            margin-right: 9rem
+            flex: 50%
+            text-align: center
+            color: $gray2
+            @media (max-width: 768px)
+                margin: 0 0 2rem 0
+    &__wrap-img
+        display: flex
+        align-items: center
+        justify-content: center
+        max-width: 15rem
+        margin: auto
+        box-shadow: 0 0 0 1px $gray5
+    &__img
+        max-width: 15rem
+    &__title
+        font-weight: bold
+        line-height: 2.5rem
+        margin-top: 3rem
+    &__desc
+        font-weight: normal
+        line-height: 1.6rem
+        font-size: 1rem
+        margin-top: 1rem
+    &__text
+        font-style: italic
+        font-weight: normal
+        line-height: 2.5rem
+        font-size: 1.6rem
+        color: $gray2
+    &__date
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        font-weight: normal
+        line-height: 2.1rem
+        font-size: 1.4rem
+        letter-spacing: 0.04em
+        text-transform: uppercase
+        color: $gray3
+        position: relative
+        &-img
+            margin-right: 1rem
+
+// MODAL
+.c-modal
+    position: relative
+    z-index: 1000000
+    &__container
+        position: fixed
+        backface-visibility: hidden
+        height: 100%
+        left: 0
+        outline: 0
+        background: #0000005a
+        top: 0
+        touch-action: manipulation
+        transform: translateZ(0)
+        width: 100%
+    &__content
+        display: flex
+        align-items: center
+        justify-content: center
+        max-width: 55rem
+        height: 100%
+        margin: auto
+        padding: 0 2rem
+
+
+// КАК МЫ РАБОТАЕМ
+.c-advance
+    margin-top: -5rem
+    &:first-of-type
+        margin-top: 0
+    &__item
+        font-size: 1.6rem
+        line-height: normal
+        margin-top: 5rem
+        @media (max-width: 768px)
+            position: relative
+            margin-left: 5rem
+            &::before
+                content: ''
+                position: absolute
+                background-image: url('/img/green_arrow.svg');
+                background-repeat: no-repeat
+                transform: rotate(90deg)
+                height: 2rem
+                width: 15rem
+                left: -10rem
+                top: 14rem
+        &.\--last
+            &::before
+                content: none
+    &__wrap-img
+        display: flex
+        justify-content: center
+        align-items: center
+        min-height: 10rem
+        position: relative
+        &.\--down
+            &::before
+                content: ''
+                position: absolute
+                background-image: url('/img/arrow_down.png');
+                background-repeat: no-repeat
+                width: 8rem
+                height: 2rem
+                right: -6rem
+                @media (max-width: 768px)
+                    content: none
+        &.\--up
+            &::before
+                content: ''
+                position: absolute
+                background-image: url('/img/arrow_up.png');
+                background-repeat: no-repeat
+                width: 8rem
+                height: 2rem
+                right: -6rem
+                @media (max-width: 768px)
+                    content: none
+    &__wrap-btn
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 7.5rem
+    &__img
+    &__title
+        font-weight: bold
+        letter-spacing: 0.03em
+        color: $gray1
+        margin-top: 2rem
+    &__text
+        font-weight: normal
+        margin-top: 1rem
+        color: $gray2
+        text-align: center
+        font-weight: normal;
+        line-height: 2.5rem
+        font-size: 1.6rem
+        text-align: center

@@ -1,0 +1,212 @@
+// Стили для секции
+.section
+    padding: 6rem 0 10rem
+    color: $gray2
+    background-color: $white1
+    &--first
+        padding-bottom: 4rem
+    &--second
+        padding-bottom: 6rem
+    &-bg
+        position: relative
+        background-size: cover
+        &.\--dark
+            background-color: $gray6
+            color: $white1
+        &.\--lightDark
+            background-color: $gray7
+    &__title
+        font-weight: 500
+        margin-bottom: 6rem
+        line-height: normal
+        font-size: 3.2rem
+        text-align: left
+        &--center
+            text-align: center
+    &--after-promo
+        @media (max-width: 768px)
+            padding-top: 12rem
+
+
+// Кнопки
+.btn
+    display: flex
+    justify-content: center
+    align-items: center
+    color: $white1
+    font-weight: normal
+    line-height: 1.8rem
+    font-size: 1.4rem
+    text-align: center
+    padding: 0.5rem 1.5rem
+    background-color: $color1
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24), 0px 4px 16px rgba(0, 0, 0, 0.16)
+    text-decoration: none
+    border-radius: 2px
+    transition: all 0.2s
+    border: none
+    cursor: pointer
+    margin-top: 1rem
+    &:focus
+        text-decoration: none
+        color: $white1
+    &:active
+        background-color: $color3
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 4px 8px rgba(0, 0, 0, 0.08)
+    &:hover
+        color: $white1
+        background-color: $color2
+        text-decoration: none
+    &--lg
+        min-width: 13rem
+        text-transform: uppercase
+        padding: 1.6rem 2rem
+        letter-spacing: 0.02em
+        line-height: normal
+        font-weight: bold
+    &--tm1
+        border: dotted 2px $color1
+        background-color: transparent
+        color: $color1
+        box-shadow: none
+        &:hover
+            border-color: $color2
+            background-color: transparent
+            color: $color1
+        &:active
+            background-color: $gray6
+            color: $color1
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 4px 8px rgba(0, 0, 0, 0.08)
+        &:focus
+            color: $color1
+    &--submit
+        width: 100%
+    &--white
+        background-color: #fff
+        color: $color1
+        &:hover, &:focus
+            background-color: $gray6
+            color: $color2
+            border-color: $gray5
+        &:active
+            background-color: $gray5
+            border-color: $gray4
+            color: $color2
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 4px 8px rgba(0, 0, 0, 0.08)
+
+
+//Списки
+.list
+    & li
+        margin-bottom: 1rem
+    &--checked
+        list-style: none
+        position: relative
+        padding-left: 2.5rem
+        & li::before
+            content: ''
+            position: absolute
+            left: 0
+            background-image: url('/img/list-check.png');
+            background-repeat: no-repeat
+            background-position: center
+            width: 1.5rem
+            height: 1.5rem
+    &--circle
+        list-style: none
+        position: relative
+        padding-left: 2.5rem
+        & li::before
+            content: ''
+            position: absolute
+            left: 0
+            background-image: url('/img/list-circle.png');
+            background-repeat: no-repeat
+            background-position: center
+            width: 1.5rem
+            height: 1.5rem
+
+
+// Ссылки
+.link
+    font-weight: normal
+    line-height: 2.5rem
+    font-size: 1.6rem
+    color: $black2
+    padding-bottom: 0.5rem
+    border-bottom: 1px solid $black2
+    text-decoration: none
+    &:hover, &:focus, &:active
+        text-decoration: none
+    &:hover
+        color: $black2
+    &--tm1
+        color: $black2
+        border-bottom: 1px solid $gray5
+        &:hover, &:focus, &:active
+            color: $gray1
+    &--tm2
+        color: $color2
+        border: none
+        &:hover
+            text-decoration: underline
+            color: $color2
+    &--tm3
+        border-color: $color2
+        &--active
+
+
+// c-form-message
+.c-message
+    &__item
+        padding: 4rem 8rem 4rem 4rem
+        display: flex
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.24), 0px 4px 16px rgba(0, 0, 0, 0.16)
+        border-radius: 2px
+        background-color: $white1
+        position: relative
+        &--close
+            position: absolute
+            right: 0
+            top: 0
+            width: 3.2rem
+            height: 3.2rem
+            opacity: 0.3
+            cursor: pointer
+            &:hover
+                opacity: 1
+            &:before, &:after
+                content: ' '
+                position: absolute
+                left: 1rem
+                top: 1rem
+                height: 2.3rem
+                width: .2rem
+                background-color: $red1
+            &:before
+                transform: rotate(45deg)
+            &:after
+                transform: rotate(-45deg)
+    &__title
+        font-weight: normal
+        line-height: 2.5rem
+        font-size: 1.6rem
+        color: $gray1
+    &__text
+        margin-top: 1rem
+        font-weight: normal
+        line-height: 1.5rem
+        font-size: 1.2rem
+        color: $gray3
+    &__msg
+        margin-top: 1rem
+        font-weight: normal
+        line-height: 1.5rem
+        font-size: 1.2rem
+        text-decoration-line: underline
+        color: #109756
+    &__wrap-img
+        margin-right: 3.5rem
+        max-width: 12rem
+    &__img
+        min-width: 10rem

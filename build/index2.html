@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+</body>
+
+
+<div class="container">
+    <h2>Пункты меню</h2>
+    <ul class="example-list">
+        <li class="example-list__item">
+            <h4 class="example-list__title">Standart-</h4><a href="#" class="link">Продкуция</a>
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">tm1-</h4><a href="#" class="link link--tm1">Продкуция</a>
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">tm2-</h4><a href="#" class="link link--tm2">Продкуция</a>
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">tm3-</h4><a href="#" class="link link--tm3">Продкуция</a>
+        </li>
+    </ul>
+
+    <h2>Элементы навигации</h2>
+    <ul class="example-list">
+        <li class="example-list__item">
+            <h4 class="example-list__title">item-1:</h4>
+            <div class="tm1-nav">
+                <div class="tm1-nav__item">
+                    <a href="#" class="tm1-nav__link">Продкуция</a>
+                </div>
+            </div>
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">item-2:</h4>
+            <div class="tm2-nav">
+                <div class="tm2-nav__item">
+                    <div class="tm2-nav__wrap-img">
+                        <img src="/img/c-nav.png" alt="" class="tm2-nav__img">
+                    </div>
+                    <div class="tm2-nav__title">Полотно LINEAR</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <h2>Кнопки</h2>
+    <ul class="example-list">
+        <li class="example-list__item">
+            <h4 class="example-list__title">Standart-</h4><a href="#" class="btn">Обратный звонок</a>
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">Standart-white</h4><a href="#" class="btn btn--white">Обратный звонок</a>
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">Large-</h4><a href="#" class="btn btn--lg">Текст На кнопке с призывом к
+                действию!</a>
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">tm1</h4><a href="#" class="btn btn--tm1">Показать</a>
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">tm2</h4><a href="#" class="btn btn--tm1 btn--lg">Показать</a>
+        </li>
+    </ul>
+
+
+
+    <h2>Инпуты</h2>
+    <ul class="example-list">
+        <li class="example-list__item">
+            <h4 class="example-list__title">Standart-</h4>
+            <form class="c-form" action="post">
+                <div class="c-form__item">
+                    <label class="c-form__label">Ваше имя*
+                        <input type="text" class="c-form__input" placeholder="Петр Петров">
+                    </label>
+                </div>
+            </form>
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">White-</h4>
+            <form class="c-form" action="post">
+                <div class="c-form__item">
+                    <label class="c-form__label">Ваше имя*
+                        <input type="text" class="c-form__input --white" placeholder="Петр Петров">
+                    </label>
+                </div>
+            </form>
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">Gray-</h4>
+            <form class="c-form" action="post">
+                <div class="c-form__item">
+                    <label class="c-form__label --gray">Ваше имя*
+                        <input type="text" class="c-form__input --gray" placeholder="Петр Петров">
+                    </label>
+                </div>
+            </form>
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">Error-</h4>
+            <form class="c-form" action="post">
+                <div class="c-form__item">
+                    <label class="c-form__label">Ваше имя*
+                        <input type="text" class="c-form__input --error" placeholder="Петр Петров">
+                        <div class="c-form__input-error">Поле требует заполнения</div>
+                    </label>
+                </div>
+            </form>
+        </li>
+    </ul>
+    <br>
+    <h2>Чек-боксы</h2>
+
+    <form class="c-form" action="post">
+        <ul class="example-list">
+            <li class="example-list__item">
+                <h4 class="example-list__title">radio</h4>
+                <div class="c-input-check">
+                    <ul class="c-input-check__list">
+                        <li class="c-input-check__list-item">
+                            <div class="c-input-check__inner">
+                                <label class="c-input-check__label --radio">
+                                    <input class="c-input-check__input" type="radio">
+                                    Пакеты для мусора
+                                </label>
+                            </div>
+                        </li>
+                        <li class="c-input-check__list-item">
+                            <div class="c-input-check__inner">
+                                <label class="c-input-check__label --radio">
+                                    <input class="c-input-check__input" type="radio">
+                                    Пакеты для мусора
+                                </label>
+                            </div>
+                        </li>
+                        <li class="c-input-check__list-item">
+                            <div class="c-input-check__inner">
+                                <label class="c-input-check__label --radio">
+                                    <input class="c-input-check__input" type="radio">
+                                    Пакеты для мусора
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="example-list__item">
+                <h4 class="example-list__title">checked</h4>
+                <div class="c-input-check">
+                    <ul class="c-input-check__list">
+                        <li class="c-input-check__list-item">
+                            <div class="c-input-check__inner">
+                                <label class="c-input-check__label --checked">
+                                    <input class="c-input-check__input" type="checkbox">
+                                    Пакеты для мусора
+                                </label>
+                            </div>
+                        </li>
+                        <li class="c-input-check__list-item">
+                            <div class="c-input-check__inner">
+                                <label class="c-input-check__label --checked">
+                                    <input class="c-input-check__input" type="checkbox">
+                                    Пакеты для мусора
+                                </label>
+                            </div>
+                        </li>
+                        <li class="c-input-check__list-item">
+                            <div class="c-input-check__inner">
+                                <label class="c-input-check__label --checked">
+                                    <input class="c-input-check__input" type="checkbox">
+                                    Пакеты для мусора
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </form>
+    <br>
+    <h2>Списки</h2>
+    <ul class="list">
+        <li>Lorem</li>
+        <li>Lorem</li>
+        <li>Lorem</li>
+        <li>Lorem</li>
+        <li>Lorem</li>
+    </ul>
+    <br>
+    <ul class="list list--checked">
+        <li>Lorem</li>
+        <li>Lorem</li>
+        <li>Lorem</li>
+        <li>Lorem</li>
+        <li>Lorem</li>
+    </ul>
+    <br>
+    <ul class="list list--circle">
+        <li>Lorem</li>
+        <li>Lorem</li>
+        <li>Lorem</li>
+        <li>Lorem</li>
+        <li>Lorem</li>
+    </ul>
+
+    <br>
+    <ul class="example-list">
+        <li class="example-list__item">
+            <h4 class="example-list__title">Advanced</h4>
+            <div class="c-tech">
+                <div class="c-tech__item">
+                    <div class="c-tech__param">Характеристика 1</div>
+                    <div class="c-tech__line"></div>
+                    <div class="c-tech__value">параметр 1</div>
+                </div>
+                <div class="c-tech__item">
+                    <div class="c-tech__param">Характеристика 2</div>
+                    <div class="c-tech__line"></div>
+                    <div class="c-tech__value">параметр 2</div>
+                </div>
+                <div class="c-tech__item">
+                    <div class="c-tech__param">Характеристика 3</div>
+                    <div class="c-tech__line"></div>
+                    <div class="c-tech__value">параметр 3</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+
+    <br><br>
+    <h2>Буллиты:</h2>
+    <ul class="example-list">
+
+
+        <li class="example-list__item">
+            <h4 class="example-list__title">xs-</h4>
+
+                <div class="c-main__item">
+                    <div class="c-main__wrap-img --xs">
+                        <img src="/img/c-main.png" alt="" class="c-main__img --xs">
+                    </div>
+                    <div class="c-main__title --xs">Качественное УТП 1</div>
+                </div>
+
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">sm-</h4>
+
+                <div class="c-main__item">
+                    <div class="c-main__wrap-img --sm">
+                        <img src="/img/c-main.png" alt="" class="c-main__img --sm">
+                    </div>
+                    <div class="c-main__title --sm">Lorem ipsum dolor sit amet</div>
+                </div>
+
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">md-</h4>
+
+                <div class="c-main__item">
+                    <div class="c-main__wrap-img --md">
+                        <img src="/img/c-main.png" alt="" class="c-main__img --md">
+                    </div>
+                    <div class="c-main__title --md">Элемент списка проблем заказчика с иконками</div>
+                </div>
+
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">Standart-</h4>
+
+                <div class="c-main__item">
+                    <div class="c-main__wrap-img">
+                        <img src="/img/c-main.png" alt="" class="c-main__img">
+                    </div>
+                    <div class="c-main__title --standart">Заголовок элемента в две строки</div>
+                    <div class="c-main__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                        tempor, orci in rutrum placerat, arcu sem tristique</div>
+                </div>
+
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">xl-</h4>
+
+                <div class="c-main__item">
+                    <div class="c-main__wrap-img --xl">
+                        <img src="/img/c-main-xl.png" alt="" class="c-main__img --xl">
+                    </div>
+                    <div class="c-main__title --xl">Заголовок элемента в две строки</div>
+                    <div class="c-main__text --xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                        tempor, orci in rutrum placerat, arcu sem tristique</div>
+                </div>
+
+        </li>
+
+    </ul>
+    <br><br>
+    <h2>Number</h2>
+    <ul class="example-list">
+        <li class="example-list__item">
+            <h4 class="example-list__title">number-</h4>
+            <div class="c-number">
+                <div class="c-form__item">
+                    <div class="c-number__title">30%</div>
+                    <div class="c-number__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                        tempor, orci in rutrum placerat, arcu sem tristique</div>
+                </div>
+            </div>
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">number-</h4>
+            <div class="c-number">
+                <div class="c-form__item --bg">
+                    <div class="c-number__title">3,5 <span class="c-number__small">млрд руб</span></div>
+                    <div class="c-number__text --white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Curabitur
+                        tempor, orci in rutrum placerat, arcu sem tristique</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <br>
+    <h2>Карточки:</h2>
+    <br>
+    <ul class="example-list">
+        <li class="example-list__item">
+            <h4 class="example-list__title">tm1-sm</h4>
+            <div class="tm1-cart">
+                <div class="tm1-cart__item">
+                    <div class="tm1-cart__wrap-img --standart">
+                        <img src="/img/tm-cart2.png" alt="" class="tm1-cart__img --standart">
+                    </div>
+                    <div class="tm1-cart__title --standart">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                </div>
+            </div>
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">tm1-standart</h4>
+            <div class="tm1-cart">
+                <div class="tm1-cart__item">
+                    <div class="tm1-cart__wrap-img --sm">
+                        <img src="/img/tm-cart.png" alt="" class="tm1-cart__img --sm">
+                    </div>
+                    <div class="tm1-cart__title --sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                </div>
+            </div>
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">tm3-</h4>
+            <div class="tm2-cart">
+                <div class="tm2-cart__item">
+                    <div class="tm2-cart__wrap-img">
+                        <img src="/img/tm-cart3.png" alt="" class="tm2-cart__img">
+                    </div>
+                    <div class="tm2-cart__title">Заголовок карточки<br>с видео 3</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <br>
+    <h2>Формы</h2>
+    <ul class="example-list">
+        <li class="example-list__item">
+            <h4 class="example-list__title">dark-</h4>
+            <form class="c-form --dark" action="">
+                <div class="c-form__content">
+                    <div class="c-form__inner">
+                    <div class="c-form__title">Заголовок - с эффективным призывом к действию</div>
+                    <div class="c-form__subtitle">Попробуйте бесплатно!</div>
+                    <div class="c-form__descr">Количество продукции
+                        для бесплатных тестов ограничено</div>
+                        </div>
+                    <div class="c-form__inner">
+                    <div class="c-form__item">
+                        <label class="c-form__label --gray">Ваше имя*
+                            <input type="text" class="c-form__input --gray" placeholder="Петр Петров">
+                        </label>
+                    </div>
+                    <div class="c-form__item">
+                        <label class="c-form__label --gray">Ваша почта*
+                            <input type="text" class="c-form__input --gray" placeholder="sample@mail.ru">
+                        </label>
+                    </div>
+                    <div class="c-form__item">
+                        <a href="#" class="btn btn--lg">Текст На кнопке </a>
+                    </div>
+                    <div class="c-form__item">
+                        <div class="c-form__conf">
+                            <img src="/img/conf.svg" alt="" class="c-form__conf-img">
+                            Мы гарантируем конфиденциальность данных</div>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">gray-</h4>
+            <form class="c-form --gray" action="">
+                <div class="c-form__content">
+                        <div class="c-form__inner">
+                    <div class="c-form__title">Заголовок - с эффективным призывом к действию</div>
+                    <div class="c-form__subtitle --black">Попробуйте бесплатно!</div>
+                    <div class="c-form__descr">Количество продукции
+                        для бесплатных тестов ограничено</div>
+                        </div>
+                        <div class="c-form__inner">
+                    <div class="c-form__item">
+                        <label class="c-form__label --white">Ваше имя*
+                            <input type="text" class="c-form__input --white" placeholder="Петр Петров">
+                        </label>
+                    </div>
+                    <div class="c-form__item">
+                        <label class="c-form__label --white">Ваша почта*
+                            <input type="text" class="c-form__input --white" placeholder="sample@mail.ru">
+                        </label>
+                    </div>
+                    <div class="c-form__item">
+                        <a href="#" class="btn btn--lg">Текст На кнопке </a>
+                    </div>
+                    <div class="c-form__item">
+                        <div class="c-form__conf">
+                            <img src="/img/conf.svg" alt="" class="c-form__conf-img">
+                            Мы гарантируем конфиденциальность данных</div>
+                    </div>
+                    </div>
+                </div>
+            </form>
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">white-</h4>
+            <form class="c-form --white" action="">
+                <div class="c-form__content">
+                        <div class="c-form__inner">
+                    <div class="c-form__title">Заголовок - с эффективным призывом к действию</div>
+                    <div class="c-form__subtitle --black">Попробуйте бесплатно!</div>
+                    <div class="c-form__descr">Количество продукции
+                        для бесплатных тестов ограничено</div>
+                        </div>
+                        <div class="c-form__inner">
+                    <div class="c-form__item">
+                        <label class="c-form__label">Ваше имя*
+                            <input type="text" class="c-form__input" placeholder="Петр Петров">
+                        </label>
+                    </div>
+                    <div class="c-form__item">
+                        <label class="c-form__label">Ваша почта*
+                            <input type="text" class="c-form__input" placeholder="sample@mail.ru">
+                        </label>
+                    </div>
+                    <div class="c-form__item">
+                        <a href="#" class="btn btn--lg">Текст На кнопке </a>
+                    </div>
+                    <div class="c-form__item">
+                        <div class="c-form__conf">
+                            <img src="/img/conf.svg" alt="" class="c-form__conf-img">
+                            Мы гарантируем конфиденциальность данных</div>
+                    </div>
+                </div>
+                </div>
+            </form>
+        </li>
+        <li class="example-list__item">
+            <h4 class="example-list__title">white-</h4>
+            <form class="c-form --white" action="">
+                <div class="c-form__content">
+                        <div class="c-form__inner">
+                            <div class="c-form__wrap-img">
+                                <img src="/img/c-form.png" alt="" class="c-form__img">
+                            </div>
+                    <div class="c-form__title">Заголовок - с эффективным призывом к действию</div>
+                        </div>
+                        <div class="c-form__inner">
+                    <div class="c-form__item">
+                        <label class="c-form__label">Ваше имя*
+                            <input type="text" class="c-form__input" placeholder="Петр Петров">
+                        </label>
+                    </div>
+                    <div class="c-form__item">
+                        <label class="c-form__label">Ваша почта*
+                            <input type="text" class="c-form__input" placeholder="sample@mail.ru">
+                        </label>
+                    </div>
+                    <div class="c-form__item">
+                        <a href="#" class="btn btn--lg">Текст На кнопке </a>
+                    </div>
+                    <div class="c-form__item">
+                        <div class="c-form__conf">
+                            <img src="/img/conf.svg" alt="" class="c-form__conf-img">
+                            Мы гарантируем конфиденциальность данных</div>
+                    </div>
+                </div>
+                </div>
+            </form>
+        </li>
+    </ul>
+    <br>
+    <h2>inline</h2>
+    <ul class="example-list">
+        <li class="example-list__item">
+            <h4 class="example-list__title">inline</h4>
+            <div class="inline">
+
+                <div class="inline__wrap-img">
+                    <img src="/img/inline.png" class="inline__img">
+                </div>
+                <div class="inline__title">Заголовок</div>
+            </div>
+        </li>
+    </ul>
+
+<br>
+<h2>Отправка формы</h2>
+<ul class="example-list">
+        <li class="example-list__item">
+            <h4 class="example-list__title">Succes</h4>
+            <div class="c-form-message">
+                <div class="c-form-message__item">
+                    <div class="c-form-message__wrap-img">
+                        <img src="/img/succes.svg" alt="" class="c-form-message__img">
+                    </div>
+                    <div class="c-form-message__inner">
+                        <div class="c-form-message__title">Заявка успешно отправлена!</div>
+                        <div class="c-form-message__text">Наши специалисты свяжутся с вами в самое ближайшее время.</div>
+                        <div class="c-form-message__msg">Спасибо!</div>
+                    </div>
+                </div>
+            </div>
+            </li>
+            <li class="example-list__item">
+                    <h4 class="example-list__title">Error</h4>
+                    <div class="c-form-message">
+                        <div class="c-form-message__item">
+                            <div class="c-form-message__wrap-img">
+                                <img src="/img/error.svg" alt="" class="c-form-message__img">
+                            </div>
+                            <div class="c-form-message__inner">
+                                <div class="c-form-message__title">Ошибка!</div>
+                                <div class="c-form-message__text">Отправка формы не удалась. Возможно, заполнены не все поля.</div>
+                                <div class="c-form-message__msg">Попробовать еще...</div>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+            </ul>
+
+    <script src="/js/main.js"></script>
+</div>
+
+</html>

@@ -1,0 +1,97 @@
+// Стили для хедера
+.header
+    display: flex
+    align-items: center
+    padding: 1.5rem 0
+    &--small
+        min-height: 5rem
+    &__menu
+        &.\--mt
+            margin-top: 2.5rem
+    &__list
+        display: flex
+        justify-content: space-between
+        align-items: center
+        list-style: none
+        &-item
+    &__contact
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-end
+        &--clone
+            display: flex
+            justify-content: space-between
+            align-items: center
+    &__phone
+        font-weight: 500
+        line-height: normal
+        font-size: 1.8rem
+        text-decoration: none
+        &.\--xl
+            font-weight: normal
+            line-height: 3.2rem
+            font-size: 2.3rem
+        &:hover, &:focus, &:active
+            text-decoration: none
+            color: $gray7
+        &.\--dark
+            color: $gray1
+            &:hover, &:focus, &:active
+                text-decoration: none
+                color: $gray2
+    &__btn
+    &__wrap-logo
+        &.\--small
+            max-width: 5rem
+    &__logo
+        &.\--small
+            max-width: 5rem
+
+
+// Mobile menu
+.header-mobile
+    padding: 2rem
+    box-shadow: 0 0 20px 0 $gray4
+    background-color: $white1
+    &__actions
+        display: flex
+        align-items: center
+    &__logo
+        padding-bottom: 0
+        margin-top: 0
+        flex-grow: 1
+        &-img
+            margin: 0
+            padding-left: 15px
+            max-width: 6rem
+    &__phone
+        padding-right: 20px
+    &__inner-phone
+        margin-right: 3rem
+        position: relative
+    &__phone-sm
+        display: inline-block
+        font-size: 2rem
+        font-weight: 500
+        line-height: 1
+        margin-bottom: 1rem
+        vertical-align: middle
+        letter-spacing: .04em
+        opacity: 0
+    &__link-img
+        width: 2.2rem
+    &__list
+        list-style-type: none
+        margin: 2rem 0 0
+        &-item
+            &:not(:first-child)
+                margin-top: 1rem
+    &__link
+        text-decoration: none
+        color: $black2
+        &:hover, &:active, &:focus
+            text-decoration: none
+            color: $gray2
+    &__burger
+        cursor: pointer

@@ -1,0 +1,97 @@
+// Стили новых элементов
+.header
+    &__contact-text
+        font-weight: 500
+        line-height: 1.4rem
+        font-size: 1.1rem
+        text-align: center
+        color: $gray4
+        margin-bottom: 1rem
+    &--margin
+        margin-bottom: 6rem
+
+.section-promo
+    &__wrap-form
+        display: flex
+        justify-content: center
+        position: relative
+        z-index: 9999
+        margin-top: 5rem
+        margin-bottom: -10rem
+        &--m-0
+            margin: 0
+        @media (min-width: 992px)
+            justify-content: flex-end
+            margin-top: 0
+            margin-bottom: -5rem
+        @media (min-width: 768px) and (max-width: 991.98px)
+            margin-bottom: 5rem
+            &--m-0
+                margin: 0
+
+
+// c-main-promo
+.c-main-promo
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &__title
+        text-align: center
+        font-weight: 500
+        line-height: normal
+        font-size: 1.8rem
+    &__wrap-img
+        display: flex
+        justify-content: center
+        align-items: center
+        min-height: 11rem
+    &__img
+        max-width: 10rem
+
+.c-main__btn
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 1rem
+
+
+//Hidden-scroll
+.c-hidden
+    &__btn
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        margin-top: 7rem
+        padding: 3rem 0 0 0
+        text-align: center
+        cursor: pointer
+        &::before
+            content: ''
+            position: absolute
+            top: -1.5rem
+            width: 2.7rem
+            height: 2.7rem
+            background-color: transparent
+            border-top: none
+            border-bottom: 0.7rem solid $gray3
+            border-left: 0.7rem solid $gray3
+            border-right: none
+            transform: rotate(-45deg)
+
+
+//wbooster
+.wbooster
+    display: inline-flex
+    flex-wrap: nowrap
+    align-items: center
+    &__logo
+        width: 55px
+    &__text
+        margin: 0 0 0 .5rem
+        border-left: 1px solid $gray3
+        padding-left: .5rem
+        font-size: 1.1rem
+        color: $gray3
