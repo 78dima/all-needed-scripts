@@ -1,0 +1,44 @@
+{
+    "title": "Мы перезвоним в ближайшее время",
+    "desc": "",
+    "btn": "Отправить",
+    "fields": {
+        "name": {
+            "type": "text",
+            "label": "Имя*",
+            "required": true
+        },
+	    "phone": {
+            "type": "tel",
+            "placeholder": "+7 (___) ___-__-__",
+            "label": "Ваш номер*",
+            "required": true
+        },
+        "contentHeight": {
+            "type": "hidden",
+            "value": "0"
+        }, 
+        "contentWidth": {
+            "type": "hidden",
+            "value": "0"
+        }, 
+        "contentWeight": {
+            "type": "hidden",
+            "value": "0"
+        },
+        "contentTirazh": {
+            "type": "hidden",
+            "value": "0"
+        },
+        "contentColor": {
+            "type": "hidden",
+            "value": "0"
+        },
+        "contentCountColor": {
+            "type": "hidden",
+            "value": ""
+        }
+
+
+    }
+}
